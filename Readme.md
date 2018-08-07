@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дмитрий Трондин](https://up.htmlacademy.ru/htmlcss/22/user/602057).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Петров]https://htmlacademy.ru/profile/frozik.
 
 ---
 

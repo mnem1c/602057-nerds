@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Дизайн-студия Нёрдс</title>
+</head>
+<body>
+	<header class="main-header">
+		<a class="main-header-logo">
+			<img src="nerds-logo.img" alt="Логотип Nerds" width="160" height="65">
+		</a>
+		<nav class="main-navigation">
+			<ul>
+				<li><a href="studio.html">Студия</a></li>
+				<li><a href="clients.html">Клиенты</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li class="cart-link"><a href="cart.html">Корзина</a></li>
+			</ul>
+		</nav>
+	</header>
+	</main>
+		<h1>Магазин готовых шаблонов</h1>
+		<section class="value">
+			<form action="https://echo.nerds.ru">
+				<fieldset class="value-list">
+					<legend>Стоимость</legend>
+					<!--Тут полоса прокрутки стоимости-->
+					<label>От
+						<input type="text" name="from" value="0">
+					</label>
+					<label>До
+						<input type="text" name="to" value="15000">
+					</label>
+				</fieldset>
+				<fieldset class="grid-list">
+					<legend>Сетка:</legend>
+					<label>Адаптивная
+						<input type="radio" name="toggle" checked>
+					</label>
+					<label>Фиксированая
+						<input type="radio" name="toggle">
+					</label>
+					<label>Резиновая
+						<input type="radio" name="toggle">
+					</label>
+				</fieldset>
+				<fieldset class="features-list">
+					<legend>Особенности:</legend>
+					<label>Слайдер
+						<input type="checkbox" name="slider" checked>
+					</label>
+					<label>Блок преимуществ
+						<input type="checkbox" name="features">
+					</label>
+					<label>Новости
+						<input type="checkbox" name="news" checked>
+					</label>
+					<label>Галерея
+						<input type="checkbox" name="gallery">
+					</label>
+					<label>Корзина
+						<input type="checkbox" name="cart">
+					</label>
+				</fieldset>
+				<input type="submit" value="Показать">
+			</form>
+		</section>
+		<section class="main-content">
+			<ul class="sort-content">Сортировать:
+				<li class="sort-content-item"><a class="button" href="#">По цене</a></li>
+				<li class="sort-content-item"><a class="button" href="#">По типу</a></li>
+				<li class="sort-content-item"><a class="button" href="#">По названию</a></li>
+			</ul>
+			<article class="content">
+				<img src="img/sedona.jpg" alt="Sedona сайт для туристов" width="50" height="100">
+				<div class="visually-hidden">
+					<h3>Sedona</h3>
+					<p>Информационный сайт для туристов</p>
+					<button>9900 руб.</button>
+				</div>
+			</article>
+			<article class="content">
+				<img src="img/pink.jpg" alt="Pink развлекательное приложение" width="50" height="100">
+				<div class="visually-hidden">
+					<h3>Pink</h3>
+					<p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+					<button>10000 руб.</button>
+				</div>
+			</article>
+			<article class="content">
+				<img src="img/borodinski.jpg" alt="Барбершоп Boroinski" width="50" height="100">
+				<div class="visually-hidden">
+					<h3>Borodinski</h3>
+					<p>Стрижка у нас это выгодно</p>
+					<button>9000 руб.</button>
+				</div>
+			</article>
+			<article class="content">
+				<img src="img/mishka.jpg" alt="Mishka сайт хенд-мейд" width="50" height="100">
+				<div class="visually-hidden">
+					<h3 class="visually-hidden">Mishka</h3>
+					<p>Милые штуки ручной работы для дома</p>
+					<button>10500 руб.</button>
+				</div>
+			</article>
+			<article class="content">
+				<img src="img/learn.jpg" alt="Академия искусства" width="50" height="100">
+				<div class="visually-hidden">
+					<h3 class="visually-hidden"></h3>
+					<p>Учеба еще никогда не была такой интересной</p>
+					<button>9500 руб.</button>
+				</div>
+			</article>
+			<article class="content">
+				<img src="img/kvass.jpg" alt="Крафтовый квас" width="50" height="100">
+				<div class="visually-hidden">
+					<h3 class="visually-hidden">Крафтовый квас</h3>
+					<p>Крафтовый квас всему голова!</p>
+					<button>10200 руб.</button>
+				</div>
+			</article>
+			<div class="page-switch">
+				<a class="prev" href="#prev">Назад</a>
+				<a href="#1">1</a>
+				<a href="#2">2</a>
+				<a href="#3">3</a>
+				<a class="next" href="#next">Вперёд</a>
+ 			</div>
+		</section>
+		<section class="contacts">
+			<h3 class="visually-hidden">Контактная информация</h3>
+			<p><b>NЁRDS DESIGN STUDIO</b></p>
+			<p>191186, Санкт-Петербург,<br>
+				ул. Б.Конюшенная, д.19/8<br>
+			</p>
+			<p>	тел.+7 (812) 275-75-75</p>
+			<a class="button" href="#">Напишите нам</a>
+			<img src="img/map.jpg" alt="Мы на карте">
+		</section>
+		<footer class="social">
+				<ul>
+					<li><a class="social-button-vk" href="#">Вконтакте</a></li>
+					<li><a class="social-button-fb" href="#">Фейсбук</a></li>
+					<li><a class="social-button-inst" href="#">Инстаграм</a></li>
+				</ul>
+				<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+		</footer>	
+		<section class="modal modal-write-us">
+			<h2>Напишите нам</h2>
+			<form action="https://echo.nerds.ru" method="post">
+				<label>Ваш имя
+					<input type="text" name="login">
+				</label>
+				<label>Ваш e-mail
+					<input type="text" name="e-mail">
+				</label>
+				<label>Текст письма:
+					<textarea name="letter-text" id="" cols="30" rows="10"></textarea>
+				</label>
+				<input type="submit" value="Отравить">
+			</form>
+		</section>
+	</main>
+</body>
+</html>

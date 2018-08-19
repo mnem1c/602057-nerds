@@ -39,44 +39,56 @@
 
 				<fieldset class="grid-list">
 					<legend>Сетка:</legend>
-					<label>
-						<input type="radio" name="toggle" checked>
-					Адаптивная</label>
-					<label>
-						<input type="radio" name="toggle">
-					Фиксированая</label>
-					<label>
-						<input type="radio" name="toggle">
-					Резиновая</label>
+					<ul>
+						<li>
+							<input type="radio" name="toggle" id="grid-adaptive" checked>
+							<label for="grid-adaptive">Адаптивная</label>
+						</li>
+						<li>
+							<input type="radio" name="toggle" id="grid-fix">
+							<label for="grid-fix">Фиксированая</label>
+						</li>
+						<li>
+							<input type="radio" name="toggle" id="grid-flex">
+							<label for="grid-flex">Резиновая</label>
+						</li>
+					</ul>
 				</fieldset>
 				<fieldset class="features-list">
 					<legend>Особенности:</legend>
-					<label>
-						<input type="checkbox" name="slider" checked>
-					Слайдер</label>
-					<label>
-						<input type="checkbox" name="features">
-					Блок преимуществ</label>
-					<label>
-						<input type="checkbox" name="news" checked>
-					Новости</label>
-					<label>
-						<input type="checkbox" name="gallery">
-					Галерея</label>
-					<label>
-						<input type="checkbox" name="cart">
-					Корзина</label>
+					<ul>
+						<li>
+							<input type="checkbox" name="slider" checked id="feature-slider">
+							<label for="feature-slider">Слайдер</label>
+						</li>
+						<li>
+							<input type="checkbox" name="features" id="feature-block">
+							<label for="feature-block">Блок преимуществ</label>
+						</li>
+						<li>
+							<input type="checkbox" name="news" id="feature-news" checked>
+							<label for="feature-news">Новости</label>
+						</li>
+						<li>
+							<input type="checkbox" name="gallery" id="feature-gallery">
+							<label for="feature-gallery">Галерея</label>
+						</li>
+						<li>
+							<input type="checkbox" name="cart" id="feature-cart">
+							<label for="feature-cart">Корзина</label>
+						</li>
+					</ul>
 				</fieldset>
-				<input type="submit" value="Показать">
+				<button type="submit" class="filter-button">Показать</button>
 			</form>
 		</section>
 		<section class="main-content">
 			<h2 class="visually-hidden">Список товаров</h2>
 			<p>Сортировать:</p>
 			<ul class="sort-content">
-				<li class="sort-content-item"><a class="button" href="#">По цене</a></li>
-				<li class="sort-content-item"><a class="button" href="#">По типу</a></li>
-				<li class="sort-content-item"><a class="button" href="#">По названию</a></li>
+				<li class="sort-content-item"><button class="sort-button">По цене</button></li>
+				<li class="sort-content-item"><button class="sort-button">По типу</button></li>
+				<li class="sort-content-item"><button class="sort-button">По названию</button></li>
 			</ul>
 			<section class="content-list">
 				<ul>
@@ -86,7 +98,7 @@
 							<div class="content-item-hidden">
 								<h3>Sedona</h3>
 								<p>Информационный сайт для туристов</p>
-								<button>9900 руб.</button>
+								<button class="content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -96,7 +108,7 @@
 							<div class="content-item-hidden">
 								<h3>Pink</h3>
 								<p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-								<button>10000 руб.</button>
+								<button class="content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -106,7 +118,7 @@
 							<div class="content-item-hidden">
 								<h3>Borodinski</h3>
 								<p>Стрижка у нас это выгодно</p>
-								<button>9000 руб.</button>
+								<button class="content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -116,7 +128,7 @@
 							<div class="content-item-hidden">
 								<h3>Mishka</h3>
 								<p>Милые штуки ручной работы для дома</p>
-								<button>10500 руб.</button>
+								<button class="content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -126,7 +138,7 @@
 							<div class="content-item-hidden">
 								<h3>Академия А+</h3>
 								<p>Учеба еще никогда не была такой интересной</p>
-								<button>9500 руб.</button>
+								<button class="content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -136,7 +148,7 @@
 							<div class="content-item-hidden">
 								<h3>Кваст</h3>
 								<p>Крафтовый квас всему голова!</p>
-								<button>10200 руб.</button>
+								<button class="content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -157,9 +169,9 @@
 			</p>
 			<p>	тел.+7 (812) 275-75-75</p>
 			<a class="button" href="#">Напишите нам</a>
-			<p>
+			<div class="map">
 				<img src="img/index-map.jpg" alt="Мы на карте" width="1440" height="416">
-			</p>
+			</div>
 		</section>
 	</main>
 	<footer class="social">
@@ -185,7 +197,7 @@
 				<label class="message-item" for="message-text">Текст письма:</label>
 				<textarea name="letter-text" id="message-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 			</div>
-			<button class="button" type="submit">Отправить</button>
+			<button class="modal-button-send" type="submit">Отправить</button>
 			<button class="modal-close" type="button">Закрыть</button>
 		</form>
 	</section>

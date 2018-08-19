@@ -26,6 +26,7 @@
 			<h1>Магазин готовых шаблонов</h1>
 		</div>
 		<section class="filters">
+			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="valueoutput.value=valuecount.value">
 				
 				<fieldset class="value-list">
@@ -70,67 +71,82 @@
 			</form>
 		</section>
 		<section class="main-content">
-			<ul class="sort-content">Сортировать:
+			<h2 class="visually-hidden">Список товаров</h2>
+			<p>Сортировать:</p>
+			<ul class="sort-content">
 				<li class="sort-content-item"><a class="button" href="#">По цене</a></li>
 				<li class="sort-content-item"><a class="button" href="#">По типу</a></li>
 				<li class="sort-content-item"><a class="button" href="#">По названию</a></li>
 			</ul>
 			<section class="content-list">
-				<article class="content-item">
-					<img src="img/img-sedona.jpg" alt="Sedona сайт для туристов" width="360" height="576">
-					<div class="content-item-hidden">
-						<h3>Sedona</h3>
-						<p>Информационный сайт для туристов</p>
-						<button>9900 руб.</button>
-					</div>
-				</article>
-				<article class="content-item">
-					<img src="img/img-pink.jpg" alt="Pink развлекательное приложение" width="360" height="576">
-					<div class="content-item-hidden">
-						<h3>Pink</h3>
-						<p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-						<button>10000 руб.</button>
-					</div>
-				</article>
-				<article class="content-item">
-					<img src="img/img-barbershop.jpg" alt="Барбершоп Boroinski" width="360" height="576">
-					<div class="content-item-hidden">
-						<h3>Borodinski</h3>
-						<p>Стрижка у нас это выгодно</p>
-						<button>9000 руб.</button>
-					</div>
-				</article>
-				<article class="content-item">
-					<img src="img/img-mishka.jpg" alt="Mishka сайт хенд-мейд" width="360" height="576">
-					<div class="content-item-hidden">
-						<h3>Mishka</h3>
-						<p>Милые штуки ручной работы для дома</p>
-						<button>10500 руб.</button>
-					</div>
-				</article>
-				<article class="content-item">
-					<img src="img/img-aplus.jpg" alt="Академия искусства" width="360" height="576">
-					<div class="content-item-hidden">
-						<h3>Академия А+</h3>
-						<p>Учеба еще никогда не была такой интересной</p>
-						<button>9500 руб.</button>
-					</div>
-				</article>
-				<article class="content-item">
-					<img src="img/img-kvast.jpg" alt="Крафтовый квас" width="360" height="576">
-					<div class="content-item-hidden">
-						<h3>Кваст</h3>
-						<p>Крафтовый квас всему голова!</p>
-						<button>10200 руб.</button>
-					</div>
-				</article>
+				<ul>
+					<li>
+						<article class="content-item">
+							<img src="img/img-sedona.jpg" alt="Sedona сайт для туристов" width="360" height="576">
+							<div class="content-item-hidden">
+								<h3>Sedona</h3>
+								<p>Информационный сайт для туристов</p>
+								<button>9900 руб.</button>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="content-item">
+							<img src="img/img-pink.jpg" alt="Pink развлекательное приложение" width="360" height="576">
+							<div class="content-item-hidden">
+								<h3>Pink</h3>
+								<p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+								<button>10000 руб.</button>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="content-item">
+							<img src="img/img-barbershop.jpg" alt="Барбершоп Boroinski" width="360" height="576">
+							<div class="content-item-hidden">
+								<h3>Borodinski</h3>
+								<p>Стрижка у нас это выгодно</p>
+								<button>9000 руб.</button>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="content-item">
+							<img src="img/img-mishka.jpg" alt="Mishka сайт хенд-мейд" width="360" height="576">
+							<div class="content-item-hidden">
+								<h3>Mishka</h3>
+								<p>Милые штуки ручной работы для дома</p>
+								<button>10500 руб.</button>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="content-item">
+							<img src="img/img-aplus.jpg" alt="Академия искусства" width="360" height="576">
+							<div class="content-item-hidden">
+								<h3>Академия А+</h3>
+								<p>Учеба еще никогда не была такой интересной</p>
+								<button>9500 руб.</button>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="content-item">
+							<img src="img/img-kvast.jpg" alt="Крафтовый квас" width="360" height="576">
+							<div class="content-item-hidden">
+								<h3>Кваст</h3>
+								<p>Крафтовый квас всему голова!</p>
+								<button>10200 руб.</button>
+							</div>
+						</article>
+					</li>
+				</ul>
 			</section>
 			<div class="page-switch">
-				<a class="prev" href="#prev">Назад</a>
 				<a href="#1">1</a>
 				<a href="#2">2</a>
 				<a href="#3">3</a>
-				<a class="next" href="#next">Вперёд</a>
+				<a class="next" href="#next">Следующая</a>
  			</div>
 		</section>
 		<section class="contacts">
@@ -156,22 +172,19 @@
 	</footer>	
 	<section class="modal modal-write-us">
 		<h2>Напишите нам</h2>
-		<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-			<p>
-				<label class="appointment-item">Ваш имя
-					<input type="text" name="name" placeholder="Имя Фамилия">
-				</label>
-			</p>
-			<p>
-				<label class="appointment-item">Ваш e-mail
-					<input type="text" name="e-mail" placeholder="email@example.com">
-				</label>
-			</p>
-			<p>
-				<label class="appointment-item">Текст письма:
-				<p><textarea name="letter-text" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea></p>
-				</label>
-			</p>
+		<form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="message-wrapper">
+				<label class="message-item" for="message-name">Ваш имя</label>
+				<input type="text" name="name" id="message-name" placeholder="Имя Фамилия">
+			</div>
+			<div class="message-wrapper">
+				<label class="message-item" for="message-email">Ваш e-mail</label>
+				<input type="text" name="e-mail" id="message-email" placeholder="email@example.com">
+			</div>
+			<div class="message-wrapper">
+				<label class="message-item" for="message-text">Текст письма:</label>
+				<textarea name="letter-text" id="message-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			</div>
 			<button class="button" type="submit">Отправить</button>
 			<button class="modal-close" type="button">Закрыть</button>
 		</form>

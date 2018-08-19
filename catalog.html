@@ -25,47 +25,46 @@
 		<div class="header-container">
 			<h1>Магазин готовых шаблонов</h1>
 		</div>
-		<section class="value">
-			<form action="https://echo.nerds.ru">
+		<section class="filters">
+			<form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="valueoutput.value=valuecount.value">
+				
 				<fieldset class="value-list">
-					<legend>Стоимость</legend>
-					<!--Тут полоса прокрутки стоимости-->
-					<label>От
-						<input type="text" name="from" value="0">
-					</label>
-					<label>До
-						<input type="text" name="to" value="15000">
-					</label>
+					
+					<label for="valuecount">Стоимость</label>
+					<input type="range" id="valuecount" name="valuecount" min="1" max="15000" step="1">
+					<output name="valueoutput">0</output>
+
 				</fieldset>
+
 				<fieldset class="grid-list">
 					<legend>Сетка:</legend>
-					<label>Адаптивная
+					<label>
 						<input type="radio" name="toggle" checked>
-					</label>
-					<label>Фиксированая
+					Адаптивная</label>
+					<label>
 						<input type="radio" name="toggle">
-					</label>
-					<label>Резиновая
+					Фиксированая</label>
+					<label>
 						<input type="radio" name="toggle">
-					</label>
+					Резиновая</label>
 				</fieldset>
 				<fieldset class="features-list">
 					<legend>Особенности:</legend>
-					<label>Слайдер
+					<label>
 						<input type="checkbox" name="slider" checked>
-					</label>
-					<label>Блок преимуществ
+					Слайдер</label>
+					<label>
 						<input type="checkbox" name="features">
-					</label>
-					<label>Новости
+					Блок преимуществ</label>
+					<label>
 						<input type="checkbox" name="news" checked>
-					</label>
-					<label>Галерея
+					Новости</label>
+					<label>
 						<input type="checkbox" name="gallery">
-					</label>
-					<label>Корзина
+					Галерея</label>
+					<label>
 						<input type="checkbox" name="cart">
-					</label>
+					Корзина</label>
 				</fieldset>
 				<input type="submit" value="Показать">
 			</form>
@@ -142,7 +141,9 @@
 			</p>
 			<p>	тел.+7 (812) 275-75-75</p>
 			<a class="button" href="#">Напишите нам</a>
-			<img src="img/index-map.jpg" alt="Мы на карте" width="1440" height="416">
+			<p>
+				<img src="img/index-map.jpg" alt="Мы на карте" width="1440" height="416">
+			</p>
 		</section>
 	</main>
 	<footer class="social">
@@ -153,19 +154,26 @@
 		</ul>
 		<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
 	</footer>	
-		<section class="modal modal-write-us">
-			<h2>Напишите нам</h2>
-			<form action="https://echo.nerds.ru" method="post">
-				<label>Ваш имя
-					<input type="text" name="login">
+	<section class="modal modal-write-us">
+		<h2>Напишите нам</h2>
+		<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label class="appointment-item">Ваш имя
+					<input type="text" name="name" placeholder="Имя Фамилия">
 				</label>
-				<label>Ваш e-mail
-					<input type="text" name="e-mail">
+			</p>
+			<p>
+				<label class="appointment-item">Ваш e-mail
+					<input type="text" name="e-mail" placeholder="email@example.com">
 				</label>
-				<label>Текст письма:
-					<textarea name="letter-text" id="" cols="30" rows="10"></textarea>
+			</p>
+			<p>
+				<label class="appointment-item">Текст письма:
+				<p><textarea name="letter-text" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea></p>
 				</label>
-				<input type="submit" value="Отравить">
-			</form>
-		</section>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+			<button class="modal-close" type="button">Закрыть</button>
+		</form>
+	</section>
 </body>

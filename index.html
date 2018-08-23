@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Дизайн-студия Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<!--<link rel="stylesheet" href="css/normalize.css">-->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -10,7 +13,7 @@
 			<img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65">
 		</a>
 		<nav class="main-navigation">
-			<ul>
+			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
 				<li><a href="clients.html">Клиенты</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
@@ -20,84 +23,84 @@
 				<li class="cart-link"><a href="cart.html">Корзина</a></li>
 			</ul>
 		</nav>
-	</header>
-	<section class="slider">
-		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-		<div class="slider-content">
-			<ul>
-				<li class="slide-1">
-					<h2> Долго, дорого, скрупулезно.</h2>
-					<p>Математически вывереный дизайн для вашего сайта или мобильного приложения.</p>
-					<a href="catalog.html">Узнать больше</a>
-				</li>
-				<li class="slide-2">
-					<h2>Любим математику как никто другой</h2>
-					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-					<a href="catalog.html">Узнать больше</a>
-				</li>
-				<li class="slide-3">
-					<h2>Только ночь, только хардкор</h2>
-					<p>Работать днем, как все? Мы против этого. Ближе к полуночи, работа только начинается.</p>
-					<a href="catalog.html">Узнать больше</a>
-				</li>
-			</ul>
-			<div class="slider-controls">
-				<input type="radio" name="slider" checked>
-				<input type="radio" name="slider">
-				<input type="radio" name="slider">
+		<section class="slider">
+			<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+			<div class="slider-content">
+				<ul class="slider-items">
+					<li class="slide-1">
+						<h2> Долго, дорого, скрупулезно.</h2>
+						<p>Математически вывереный дизайн для вашего сайта или мобильного приложения.</p>
+						<a class="button" href="catalog.html">Узнать больше</a>
+					</li>
+					<li class="slide-2">
+						<h2>Любим математику как никто другой</h2>
+						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+						<a class="button" href="catalog.html">Узнать больше</a>
+					</li>
+					<li class="slide-3">
+						<h2>Только ночь, только хардкор</h2>
+						<p>Работать днем, как все? Мы против этого. Ближе к полуночи, работа только начинается.</p>
+						<a class="button" href="catalog.html">Узнать больше</a>
+					</li>
+				</ul>
+				<div class="slider-controls">
+					<button class="slider-button"></button>
+					<button class="slider-button"></button>
+					<button class="slider-button"></button>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</header>
 	<main class="container">
 		<section class="services">
 			<h2 class="visually-hidden">Услуги</h2>
 			<ul class="services-list">
-				<li class="services-item">
+				<li class="services-item-sites">
 					<h3>Веб-сайты</h3>
 					<p>Мир никогда не будет прежим после того как увидит ваш сайт!</p>
-					<a class="button" href="catalog.html">Заказать</a>
+					<a class="button button-sites" href="catalog.html">Заказать</a>
 				</li>
-				<li class="services-item">
+				<li class="services-item-apps">
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a class="button" href="catalog.html">Заказать</a>
+					<a class="button button-apps" href="catalog.html">Заказать</a>
 				</li>
-				<li class="services-item">
+				<li class="services-item-presentation">
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a class="button" href="catalog.html">Заказать</a>
+					<a class="button button-presentation" href="catalog.html">Заказать</a>
 				</li>
 			</ul>
 		</section>
 		<section class="about-us">
 			<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
 			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покаладая рук, как роботы.</p>
-			<p>Выполняем заказы на разработку:</p>
-			<ul class="make-orders">
-				<li class="make-orders-item">Веб-сайтов любой сложности</li>
-				<li class="make-orders-item">Мобильных приложения для iOS и Android</li>
-				<li class="make-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+			<p class="orders">Выполняем заказы на разработку:</p>
+			<ul class="orders-list">
+				<li class="orders-item">Веб-сайтов любой сложности</li>
+				<li class="orders-item">Мобильных приложения для iOS и Android</li>
+				<li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
 			</ul>
-			<table class="statistic-list">
-				<caption>С 2004 года любим точность во всем:</caption>
+			<table class="statistic">
+				<caption class="statistic-list">С 2004 года любим точность во всем:</caption>
 				<tr class="statistic-items">
 					<td>Уровень самотдачи</td>
-					<td>146%</td>
+					<td class="statistic-percent">146<sup>%</sup></td>
 				</tr>
 				<tr class="statistic-items">
 					<td>Соблюдение сроков</td>
-					<td>100%</td>
+					<td class="statistic-percent">100<sup>%</sup></td>
 				</tr>
 				<tr class="statistic-items">
 					<td>Минимальная предоплата</td>
-					<td>50%</td>
+					<td class="statistic-percent">50<sup>%</sup></td>
 				</tr>
 			</table>
 		</section>
 		<section class="partners">
 			<h3 class="visually-hidden">Наши партнеры</h3>
 			<ul class="partners-list">
-				<li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a></li>
+				<li class="partners-htmlacademy"><a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a></li>
 				<li class="partners-item"><a href="https://barbershop.ru">Barbershop Borodinski</a></li>
 				<li class="partners-item"><a href="https://pink.ru">Pink</a></li>
 				<li class="partners-item"><a href="https://mishka.ru">Mishka</a></li>
@@ -105,43 +108,43 @@
 		</section>
 		<section class="contacts">
 			<h3 class="visually-hidden">Контактная информация</h3>
-			<p><b>NЁRDS DESIGN STUDIO</b></p>
+			<p class="contact-info"><b>NЁRDS DESIGN STUDIO</b></p>
 			<p>191186, Санкт-Петербург,<br>
 				ул. Б.Конюшенная, д.19/8<br>
 			</p>
 			<p>	тел.+7 (812) 275-75-75</p>
-			<a class="button" href="#">Напишите нам</a>
+			<a class="button contacts-button" href="#">Напишите нам</a>
 			<div class="map">
 				<img src="img/index-map.jpg" alt="Мы на карте" width="1440" height="416">
 			</div>
 		</section>
 	</main>
-		<footer class="social">
-				<ul>
-					<li><a class="social-button-vk" href="#">Вконтакте</a></li>
-					<li><a class="social-button-fb" href="#">Фейсбук</a></li>
-					<li><a class="social-button-inst" href="#">Инстаграм</a></li>
-				</ul>
-				<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
-		</footer>	
-		<section class="modal modal-write-us">
-			<h2>Напишите нам</h2>
-			<form class="message-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="message-wrapper">
-					<label class="message-item" for="message-name">Ваш имя</label>
-					<input type="text" name="name" id="message-name" placeholder="Имя Фамилия">
-				</div>
-				<div class="message-wrapper">
-					<label class="message-item" for="message-email">Ваш e-mail</label>
-					<input type="text" name="e-mail" id="message-email" placeholder="email@example.com">
-				</div>
-				<div class="message-wrapper">
-					<label class="message-item" for="message-text">Текст письма:</label>
-					<textarea name="letter-text" id="message-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-				</div>
-				<button class="modal-button-send" type="submit">Отправить</button>
-				<button class="modal-close" type="button">Закрыть</button>
-			</form>
-		</section>
+	<footer class="social">
+			<ul class="social-list">
+				<li><a class="social-button-vk" href="#">Вконтакте</a></li>
+				<li><a class="social-button-fb" href="#">Фейсбук</a></li>
+				<li><a class="social-button-inst" href="#">Инстаграм</a></li>
+			</ul>
+			<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+	</footer>	
+	<section class="modal modal-write-us">
+		<h2>Напишите нам</h2>
+		<form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="message-wrapper">
+				<label class="message-item" for="message-name">Ваш имя</label>
+				<input type="text" name="name" id="message-name" placeholder="Имя Фамилия">
+			</div>
+			<div class="message-wrapper">
+				<label class="message-item" for="message-email">Ваш e-mail</label>
+				<input type="text" name="e-mail" id="message-email" placeholder="email@example.com">
+			</div>
+			<div class="message-wrapper">
+				<label class="message-item" for="message-text">Текст письма:</label>
+				<textarea name="letter-text" id="message-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			</div>
+			<button class="button modal-button-send" type="submit">Отправить</button>
+			<button class="modal-close" type="button">Закрыть</button>
+		</form>
+	</section>
 </body>
 </html>

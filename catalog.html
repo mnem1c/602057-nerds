@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Дизайн-студия Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<!--<link rel="stylesheet" href="css/normalize.css">-->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -10,7 +13,7 @@
 			<img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65">
 		</a>
 		<nav class="main-navigation">
-			<ul>
+			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
 				<li><a href="clients.html">Клиенты</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
@@ -40,16 +43,16 @@
 				<fieldset class="grid-list">
 					<legend>Сетка:</legend>
 					<ul>
-						<li>
-							<input type="radio" name="toggle" id="grid-adaptive" checked>
+						<li class="filter-option">
+							<input class="filter-input" type="radio" name="toggle" id="grid-adaptive" checked>
 							<label for="grid-adaptive">Адаптивная</label>
 						</li>
-						<li>
-							<input type="radio" name="toggle" id="grid-fix">
+						<li class="filter-option">
+							<input  class="filter-input" type="radio" name="toggle" id="grid-fix">
 							<label for="grid-fix">Фиксированая</label>
 						</li>
-						<li>
-							<input type="radio" name="toggle" id="grid-flex">
+						<li class="filter-option">
+							<input  class="filter-input" type="radio" name="toggle" id="grid-flex">
 							<label for="grid-flex">Резиновая</label>
 						</li>
 					</ul>
@@ -57,38 +60,38 @@
 				<fieldset class="features-list">
 					<legend>Особенности:</legend>
 					<ul>
-						<li>
-							<input type="checkbox" name="slider" checked id="feature-slider">
+						<li class="filter-option">
+							<input  class="filter-input" type="checkbox" name="slider" checked id="feature-slider">
 							<label for="feature-slider">Слайдер</label>
 						</li>
-						<li>
-							<input type="checkbox" name="features" id="feature-block">
+						<li class="filter-option">
+							<input  class="filter-input" type="checkbox" name="features" id="feature-block">
 							<label for="feature-block">Блок преимуществ</label>
 						</li>
-						<li>
-							<input type="checkbox" name="news" id="feature-news" checked>
+						<li class="filter-option">
+							<input  class="filter-input" type="checkbox" name="news" id="feature-news" checked>
 							<label for="feature-news">Новости</label>
 						</li>
-						<li>
-							<input type="checkbox" name="gallery" id="feature-gallery">
+						<li class="filter-option">
+							<input  class="filter-input" type="checkbox" name="gallery" id="feature-gallery">
 							<label for="feature-gallery">Галерея</label>
 						</li>
-						<li>
-							<input type="checkbox" name="cart" id="feature-cart">
+						<li class="filter-option">
+							<input  class="filter-input" type="checkbox" name="cart" id="feature-cart">
 							<label for="feature-cart">Корзина</label>
 						</li>
 					</ul>
 				</fieldset>
-				<button type="submit" class="filter-button">Показать</button>
+				<button class="button filter-button" type="submit">Показать</button>
 			</form>
 		</section>
 		<section class="main-content">
 			<h2 class="visually-hidden">Список товаров</h2>
-			<p>Сортировать:</p>
+			<p class="sort">Сортировать:</p>
 			<ul class="sort-content">
-				<li class="sort-content-item"><button class="sort-button">По цене</button></li>
-				<li class="sort-content-item"><button class="sort-button">По типу</button></li>
-				<li class="sort-content-item"><button class="sort-button">По названию</button></li>
+				<li class="sort-content-item"><a href="#" class="sort-button">По цене</a></li>
+				<li class="sort-content-item"><a href="#" class="sort-button"> По типу</a></li>
+				<li class="sort-content-item"><a href="#" class="sort-button">По названию</a></li>
 			</ul>
 			<section class="content-list">
 				<ul>
@@ -98,7 +101,7 @@
 							<div class="content-item-hidden">
 								<h3>Sedona</h3>
 								<p>Информационный сайт для туристов</p>
-								<button class="content-button">9900 руб.</button>
+								<button class="button content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -106,9 +109,9 @@
 						<article class="content-item">
 							<img src="img/img-pink.jpg" alt="Pink развлекательное приложение" width="360" height="576">
 							<div class="content-item-hidden">
-								<h3>Pink</h3>
-								<p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-								<button class="content-button">9900 руб.</button>
+								<h3>Pink app</h3>
+								<p>Продуктовый лендинг приложения для iOS и Androin</p>
+								<button class="button content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -116,9 +119,9 @@
 						<article class="content-item">
 							<img src="img/img-barbershop.jpg" alt="Барбершоп Boroinski" width="360" height="576">
 							<div class="content-item-hidden">
-								<h3>Borodinski</h3>
-								<p>Стрижка у нас это выгодно</p>
-								<button class="content-button">9900 руб.</button>
+								<h3>Barbershop</h3>
+								<p>Сайт салона красоты. Для мужчин, да</p>
+								<button class="button content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -127,8 +130,8 @@
 							<img src="img/img-mishka.jpg" alt="Mishka сайт хенд-мейд" width="360" height="576">
 							<div class="content-item-hidden">
 								<h3>Mishka</h3>
-								<p>Милые штуки ручной работы для дома</p>
-								<button class="content-button">9900 руб.</button>
+								<p>Интернет магазин вязаных игрушек</p>
+								<button class="button content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -136,9 +139,9 @@
 						<article class="content-item">
 							<img src="img/img-aplus.jpg" alt="Академия искусства" width="360" height="576">
 							<div class="content-item-hidden">
-								<h3>Академия А+</h3>
-								<p>Учеба еще никогда не была такой интересной</p>
-								<button class="content-button">9900 руб.</button>
+								<h3>A plus</h3>
+								<p>Лендинг курсов повышения квалификации</p>
+								<button class="button content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -147,8 +150,8 @@
 							<img src="img/img-kvast.jpg" alt="Крафтовый квас" width="360" height="576">
 							<div class="content-item-hidden">
 								<h3>Кваст</h3>
-								<p>Крафтовый квас всему голова!</p>
-								<button class="content-button">9900 руб.</button>
+								<p>Промо-сайт производителя крафтового кваса</p>
+								<button class="button content-button">9900 руб.</button>
 							</div>
 						</article>
 					</li>
@@ -163,19 +166,19 @@
 		</section>
 		<section class="contacts">
 			<h3 class="visually-hidden">Контактная информация</h3>
-			<p><b>NЁRDS DESIGN STUDIO</b></p>
+			<p class="contact-info"><b>NЁRDS DESIGN STUDIO</b></p>
 			<p>191186, Санкт-Петербург,<br>
 				ул. Б.Конюшенная, д.19/8<br>
 			</p>
 			<p>	тел.+7 (812) 275-75-75</p>
-			<a class="button" href="#">Напишите нам</a>
+			<a class="button contacts-button" href="#">Напишите нам</a>
 			<div class="map">
 				<img src="img/index-map.jpg" alt="Мы на карте" width="1440" height="416">
 			</div>
 		</section>
 	</main>
 	<footer class="social">
-		<ul>
+		<ul class="social-list">
 			<li><a class="social-button-vk" href="#">Вконтакте</a></li>
 			<li><a class="social-button-fb" href="#">Фейсбук</a></li>
 			<li><a class="social-button-inst" href="#">Инстаграм</a></li>
@@ -197,7 +200,7 @@
 				<label class="message-item" for="message-text">Текст письма:</label>
 				<textarea name="letter-text" id="message-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 			</div>
-			<button class="modal-button-send" type="submit">Отправить</button>
+			<button class="button modal-button-send" type="submit">Отправить</button>
 			<button class="modal-close" type="button">Закрыть</button>
 		</form>
 	</section>

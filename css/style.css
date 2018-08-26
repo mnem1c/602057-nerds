@@ -11,6 +11,22 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  width: 100%;
+  height: 100%;
+}
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
 /* style header*/
 .container {
   width: 1160px;
@@ -21,6 +37,7 @@ a {
   font-size: 16px;
   line-height: 30px;
   background-color: #eeeeee;
+
 }
 .main-navigation {
   display: flex;
@@ -115,6 +132,7 @@ a {
 
 /*style services */
 .services {
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 .services-list {
@@ -232,7 +250,11 @@ a {
 .orders-item {
   list-style: none;
 }
-
+.statistic {
+  background-image: url(../img/nerds-illustration.jpg);
+  background-repeat: no-repeat;
+  padding-top: 220px
+}
 .statistic-list {
   font-weight: 700;
 }
@@ -261,10 +283,79 @@ a {
 }
 .partners-item {
   width: 260px;
-  
+}
+.htmlacademy {
+  display: block;
+  width: 260px;
+  height: 180px;
+  background-image: url("../img/logo-1.png");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+ }
+.htmlacademy:hover, 
+.htmlacademy:focus {
+  opacity: 1;
+}
+.htmlacademy:active {
+  opacity: 0.1;
+}
+.barbershop {
+  display: block;
+  width: 260px;
+  height: 180px;
+  background-image: url("../img/logo-2.png");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+.barbershop:hover, 
+.barbershop:focus {
+  opacity: 1;
+}
+.barbershop:active {
+  opacity: 0.1;
+}
+.pink {
+  display: block;
+  width: 260px;
+  height: 180px;
+  background-image: url("../img/logo-3.png");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+.pink:hover, 
+.pink:focus {
+  opacity: 1;
+}
+.pink:active {
+  opacity: 0.1;
+}
+.mishka {
+  display: block;
+  width: 260px;
+  height: 180px;
+  background-image: url("../img/logo-4.png");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+ }
+.mishka:hover, 
+.mishka:focus {
+  opacity: 1;
+}
+.mishka:active {
+  opacity: 0.1;
+}
+/* style contacts*/
+.contacts {
+  position: relative;
+}
+.contacts-wrapper {
+  position: absolute;
+  top: 42px;
+  left: 115px;
+  background-color: #ffffff;
+  padding: 10px 20px 30px 20px;
 }
 
-/* style contacts*/
 
 .contact-info {
   font-size: 18px;
@@ -272,11 +363,14 @@ a {
   font-weight: 700;
 }
 .contacts p {
+  margin-bottom: 23px;
   line-height: 18px;
 }
 
 .contacts a {
   background-color: #fb565a;
+  padding: 15px 40px 15px 40px;
+  border-radius: 2px;
 }
 .contacts-button:hover,
 .contacts-button:focus {
@@ -304,8 +398,7 @@ a {
   font-weight: 500;
  
   width: 760px;
- 
-}
+ }
 
 .content-columns {
   display: flex;
@@ -339,6 +432,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
 }
 .page-item a {
   padding: 14px 17px 14px 17px;
@@ -445,25 +539,59 @@ a {
 /* style footer*/
 .main-footer .container {
   display: flex;
-}
-.main-footer{
-  padding: 70px 0;
   
 }
-.social-list {
-  list-style: none;
-}
 .social {
-  width: 260px;
   margin: 0;
   margin-right: 140px;
-  text-align: center;
+  
 }
 .social-friend {
   width: 560px;
 }
+
+.main-footer{
+  margin: 70px 0;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  list-style: none;
+}
 .social-list a {
   text-decoration: none;
+}
+.social-button-vk {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/vk-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e1e1e1;
+  border-radius: 40px;
+}
+
+.social-button-fb {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/fb-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e1e1e1;
+  border-radius: 40px;
+}
+.social-button-inst {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/insta-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e1e1e1;
+  border-radius: 40px;
 }
 .social-list a:hover,
 .social-list a:focus {
@@ -473,16 +601,27 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
-.main-footer b {
+.social-friend b {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
-.main-footer p {
+.social-friend p {
   line-height: 22px;
 }
 
 /* style modal*/
+.modal {
+  width: 960px;
+  margin: 0 auto;
+}
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
@@ -491,6 +630,7 @@ a {
 .message-item {
   line-height: 18px;
   font-weight: 700;
+  
 }
 
 
@@ -505,5 +645,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
+
+
 
 

@@ -598,7 +598,7 @@ img {
   background-color: #e74246;
 }
 .social-list a:active {
-  color: rgba(255, 255, 255, 0.3);
+  /*color: rgba(255, 255, 255, 0.3);*/
   background-color: #d7373b;
 }
 .social-friend b {
@@ -615,14 +615,27 @@ img {
   width: 960px;
   margin: 0 auto;
 }
+
+.message-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
 .message-wrapper {
   display: flex;
   flex-direction: column;
-  
+  width: 360px;
+}
+.message-wrapper-text {
+  width: 100%;
 }
 
 
 .modal h2 {
+  padding: 0;
+  margin: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;

@@ -31,13 +31,11 @@
 	<div class="header-container">
 		<h1>Магазин готовых шаблонов</h1>
 	</div>
-	<main class="">
-		
+	<main>
 		<div class="content-columns container">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
-					
 					<fieldset class="filter-item">
 						<legend>Стоимость:</legend>
 							<div class="range-filter">
@@ -54,27 +52,25 @@
 									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
 								</div>
 							</div>
-													
-						
-
 					</fieldset>
-
-					<fieldset class="grid-list">
+					<fieldset class="grid">
 						<legend>Сетка:</legend>
-						<ul>
-							<li class="filter-option">
-								<input class="filter-input" type="radio" name="toggle" id="grid-adaptive" checked>
-								<label for="grid-adaptive">Адаптивная</label>
-							</li>
-							<li class="filter-option">
-								<input  class="filter-input" type="radio" name="toggle" id="grid-fix">
-								<label for="grid-fix">Фиксированая</label>
-							</li>
-							<li class="filter-option">
-								<input  class="filter-input" type="radio" name="toggle" id="grid-flex">
-								<label for="grid-flex">Резиновая</label>
-							</li>
-						</ul>
+						<div class="grid-list">
+							<ul>
+								<li class="filter-option">
+									<input class="filter-input" type="radio" name="toggle" id="grid-adaptive" checked>
+									<label for="grid-adaptive">Адаптивная</label>
+								</li>
+								<li class="filter-option">
+									<input  class="filter-input" type="radio" name="toggle" id="grid-fix">
+									<label for="grid-fix">Фиксированая</label>
+								</li>
+								<li class="filter-option">
+									<input  class="filter-input" type="radio" name="toggle" id="grid-flex">
+									<label for="grid-flex">Резиновая</label>
+								</li>
+							</ul>
+						</div>
 					</fieldset>
 					<fieldset class="features-list">
 						<legend>Особенности:</legend>
@@ -106,71 +102,87 @@
 			</section>
 			<section class="main-content">
 				<h2 class="visually-hidden">Список товаров</h2>
-				<p class="sort">Сортировать:</p>
-				<ul class="sort-content">
-					<li class="sort-content-item"><a href="#" class="sort-button">По цене</a></li>
-					<li class="sort-content-item"><a href="#" class="sort-button"> По типу</a></li>
-					<li class="sort-content-item"><a href="#" class="sort-button">По названию</a></li>
-				</ul>
+				<div class="sorting">
+					<p class="sort">Сортировать:</p>
+					<ul class="sort-content">
+						<li class="sort-content-item"><a href="#" class="sort-button-active">По цене</a></li>
+						<li class="sort-content-item"><a href="#" class="sort-button">По типу</a></li>
+						<li class="sort-content-item"><a href="#" class="sort-button">По названию</a></li>
+						<li class="sort-down"><a href="#" class="sort-button-down" area-label="Сортировка по уменьшению"></a></li>
+						<li class="sort-up"><a href="#" class="sort-button-up" area-label="Сортировка по увеличению"></a></li>
+					</ul>
+				</div>
 				<section class="content">
 					<ul class="content-list">
 						<li>
 							<article class="content-item">
-								<img src="img/img-sedona.jpg" alt="Sedona сайт для туристов" width="360" height="576">
-								<div class="content-item-hidden">
-									<h3>Sedona</h3>
-									<p>Информационный сайт для туристов</p>
-									<button class="button content-button">9900 руб.</button>
+								<div class="content-item-wrapper">
+									<img src="img/img-sedona.jpg" alt="Sedona сайт для туристов" width="360" height="576">
+									<div class="content-item-hidden">
+										<h3>Sedona</h3>
+										<p>Информационный сайт<br>для туристов</p>
+										<button class="button content-button">9900 руб.</button>
+									</div>
 								</div>
 							</article>
 						</li>
 						<li>
 							<article class="content-item">
-								<img src="img/img-pink.jpg" alt="Pink развлекательное приложение" width="360" height="576">
-								<div class="content-item-hidden">
-									<h3>Pink app</h3>
-									<p>Продуктовый лендинг приложения для iOS и Androin</p>
-									<button class="button content-button">9900 руб.</button>
+								<div class="content-item-wrapper">
+									<img src="img/img-pink.jpg" alt="Pink развлекательное приложение" width="360" height="576">
+									<div class="content-item-hidden">
+										<h3>Pink app</h3>
+										<p>Продуктовый лендинг<br> приложения для iOS и Androin</p>
+										<button class="button content-button">9900 руб.</button>
+									</div>
 								</div>
 							</article>
 						</li>
 						<li>
 							<article class="content-item">
-								<img src="img/img-barbershop.jpg" alt="Барбершоп Boroinski" width="360" height="576">
-								<div class="content-item-hidden">
-									<h3>Barbershop</h3>
-									<p>Сайт салона красоты. Для мужчин, да</p>
-									<button class="button content-button">9900 руб.</button>
+								<div class="content-item-wrapper">
+									<img src="img/img-barbershop.jpg" alt="Барбершоп Boroinski" width="360" height="576">
+									<div class="content-item-hidden">
+										<h3>Barbershop</h3>
+										<p>Сайт салона красоты.<br> Для мужчин, да</p>
+										<button class="button content-button">9900 руб.</button>
+									</div>
 								</div>
 							</article>
 						</li>
 						<li>
 							<article class="content-item">
-								<img src="img/img-mishka.jpg" alt="Mishka сайт хенд-мейд" width="360" height="576">
-								<div class="content-item-hidden">
-									<h3>Mishka</h3>
-									<p>Интернет магазин вязаных игрушек</p>
-									<button class="button content-button">9900 руб.</button>
+								<div class="content-item-wrapper">
+									<img src="img/img-mishka.jpg" alt="Mishka сайт хенд-мейд" width="360" height="576">
+									<div class="content-item-hidden">
+										<h3>Mishka</h3>
+										<p>Интернет магазин<br> вязаных игрушек</p>
+										<button class="button content-button">9900 руб.</button>
+									</div>
 								</div>
 							</article>
 						</li>
 						<li>
 							<article class="content-item">
-								<img src="img/img-aplus.jpg" alt="Академия искусства" width="360" height="576">
-								<div class="content-item-hidden">
-									<h3>A plus</h3>
-									<p>Лендинг курсов повышения квалификации</p>
-									<button class="button content-button">9900 руб.</button>
-								</div>
+								<div class="content-item-wrapper">
+									<img src="img/img-aplus.jpg" alt="Академия искусства" width="360" height="576">
+									<div class="content-item-hidden">
+										<h3>A plus</h3>
+										<p>Лендинг курсов повышения<br> квалификации</p>
+										<button class="button content-button">9900 руб.</button>
+									</div>
+							</div>
 							</article>
 						</li>
 						<li>
 							<article class="content-item">
-								<img src="img/img-kvast.jpg" alt="Крафтовый квас" width="360" height="576">
-								<div class="content-item-hidden">
-									<h3>Кваст</h3>
-									<p>Промо-сайт производителя крафтового кваса</p>
-									<button class="button content-button">9900 руб.</button>
+								<div class="content-item-wrapper">
+									<img src="img/img-kvast.jpg" alt="Крафтовый квас" width="360" height="576">
+									<div class="content-item-hidden">
+										<h3>Кваст</h3>
+										<p>Промо-сайт производителя<br> крафтового кваса</p>
+										<button class="button content-button">9900 руб.</button>
+									</div>
 								</div>
 							</article>
 						</li>
@@ -179,7 +191,7 @@
 						<li class="page-item page-item-curent"><a href="#">1</a></li>
 						<li class="page-item"><a href="#">2</a></li>
 						<li class="page-item"><a href="#">3</a></li>
-						<li class="page-item"><a href="#">Следующая</a></li>
+						<li class="page-item"><a class="button button-next" href="#">Следующая</a></li>
 					</ul>
 				
 				</section>
@@ -196,11 +208,8 @@
 				<p class="contact-phone">тел. +7 (812) 275-75-75</p>
 				<a class="button contacts-button" href="#">Напишите нам</a>
 			</div>
-			<div class="map-marker">
-				<img src="img/map-marker.png" alt="Мы на карте" width="367" height="190">
-			</div>
 			<div class="map">
-				<img src="img/index-map.jpg" alt="Мы на карте" width="1440" height="416">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5652524345262!2d30.321449282226784!3d59.93935586228049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1536002552694" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</section>
 	</main>
@@ -220,7 +229,8 @@
 				</ul>
 			</div>
 			<div class="social-friend">
-				<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+				<p class="social-title">Давайте дружить, это выгодно!</p>
+				<p class="social-description">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
 	</footer>		

@@ -488,7 +488,6 @@ img {
   height: 52px;
   background-color: #eeeeee;
 }
-
 /* style contacts*/
 .contacts-wrapper {
   position: relative;
@@ -1214,9 +1213,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 360px;
- 
   margin-bottom: 30px;
-
 }
 .message-title {
   margin: 0;
@@ -1227,7 +1224,6 @@ img {
   line-height: 45px;
   font-weight: 500;
 }
-
 .message-wrapper-text {
   margin-top: 4px;
   margin-bottom: 47px;

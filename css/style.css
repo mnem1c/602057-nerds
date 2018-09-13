@@ -762,8 +762,6 @@ img {
   padding-left: 15px;
   padding-bottom: 19px;
 }
-.features label {
-}
 .features-item label::before {
   content: "";
   display: inline-block;
@@ -1234,10 +1232,12 @@ img {
   line-height: 18px;
   font-weight: 700;
 }
-.message-wrapper input {
+.message-wrapper input,
+.message-wrapper textarea {
   padding: 15px;
   font: inherit;
   line-height: 18px;
+  resize: none;
   border: none;
   border-radius: 3px solid #d7dcde;
   -webkit-box-shadow: inset 2px 2px 0 0 #d7dcde,
@@ -1245,14 +1245,16 @@ img {
           box-shadow: inset 2px 2px 0 0 #d7dcde,
               inset -2px -2px 0 0 #d7dcde;
 }
-.message-wrapper input:hover {
+.message-wrapper input:hover,
+.message-wrapper textarea:hover {
   -webkit-box-shadow: inset 2px 2px 0 0 #b4b9bb,
               inset -2px -2px 0 0 #b4b9bb;
           box-shadow: inset 2px 2px 0 0 #b4b9bb,
               inset -2px -2px 0 0 #b4b9bb;  
 }
-.message-wrapper input:focus {
-  -webkit-box-shadow: inset 2px 2px 0 0 red,
+.message-wrapper input:focus,
+.message-wrapper textarea:focus {
+  -webkit-box-shadow: inset 2px 2px 0 0 #000000,
               inset -2px -2px 0 0 #000000;
           box-shadow: inset 2px 2px 0 0 #000000,
               inset -2px -2px 0 0 #000000;  
@@ -1263,31 +1265,6 @@ img {
           box-shadow: inset 2px 2px 0 0 #e74246,
               inset -2px -2px 0 0 #e74246;  
   color: #e74246;
-}
-.message-wrapper textarea {
-  padding: 15px;
-  font: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  resize: none;
-  border: none;
-  border-radius: 3px solid #d7dcde;
-  -webkit-box-shadow: inset 2px 2px 0 0 #d7dcde,
-              inset -2px -2px 0 0 #d7dcde;
-          box-shadow: inset 2px 2px 0 0 #d7dcde,
-              inset -2px -2px 0 0 #d7dcde;
-}
-.message-wrapper textarea:hover {
-  -webkit-box-shadow: inset 2px 2px 0 0 #b4b9bb,
-              inset -2px -2px 0 0 #b4b9bb;
-          box-shadow: inset 2px 2px 0 0 #b4b9bb,
-              inset -2px -2px 0 0 #b4b9bb;  
-}
-.message-wrapper textarea:focus {
-  -webkit-box-shadow: inset 2px 2px 0 0 red,
-              inset -2px -2px 0 0 #000000;
-          box-shadow: inset 2px 2px 0 0 #000000,
-              inset -2px -2px 0 0 #000000;  
 }
 .modal-button-send {
   margin-bottom: 84px;

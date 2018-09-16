@@ -1239,8 +1239,7 @@ img {
   line-height: 18px;
   resize: none;
   border: none;
-  border-radius: 3px solid #d7dcde;
-  -webkit-box-shadow: inset 2px 2px 0 0 #d7dcde,
+    -webkit-box-shadow: inset 2px 2px 0 0 #d7dcde,
               inset -2px -2px 0 0 #d7dcde;
           box-shadow: inset 2px 2px 0 0 #d7dcde,
               inset -2px -2px 0 0 #d7dcde;

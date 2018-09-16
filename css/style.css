@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -1186,7 +1187,7 @@ img {
   fill: rgba(251, 86, 90, 0.3);
 }
 .modal-close:hover path,
-.modal-close:focus path{
+.modal-close:focus path {
   fill: rgba(251, 86, 90, 1);
 }
 .modal-close:active path{
